@@ -49,3 +49,17 @@
 
 ### 第五步：运行Spring boot的入口main方法：
 ![](images/11.jpg)
+
+## spirng boot 程序分析：
+![](images/12.jpg)
+
+
+
+## spirng boot 的核心配置文件：
+![](images/12.jpg)
+
+![](images/13.jpg)
+
+![](images/14.jpg)
+
+***默认是读application.properties，当application.properties和application.yml都存在的时候也是默认读application.properties文件中的配置。所以要想读yml文件，需要将application.properties文件删除或者改名***
