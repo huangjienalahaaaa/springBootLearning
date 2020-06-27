@@ -32,4 +32,20 @@
 ## 6. 第一个Spring boot程序：
 ![](images/6.jpg)
 
+### 第一步：创建一个Spring boot项目：
+![](images/7.jpg)
 ***打包方式：springboot程序默认是打jar包***
+
+
+### 第二步：加入Spring boot的父级和起步依赖：
+![](images/8.jpg)
+
+### 第三步：创建Spring boot的入口main方法：
+![](images/9.jpg)
+
+
+### 第四步：创建Spring mvc的Controller：
+![](images/10.jpg)
+
+### 第五步：运行Spring boot的入口main方法：
+![](images/11.jpg)
