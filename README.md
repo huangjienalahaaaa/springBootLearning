@@ -31,3 +31,5 @@
 
 ## 6. 第一个Spring boot程序：
 ![](images/6.jpg)
+
+***打包方式：springboot程序默认是打jar包***
