@@ -51,10 +51,9 @@
         </dependency>
 <!--        引入Srping Boot内嵌的Tomcat对JSP的解析包：这个包如果你不添加的话，你在访问jsp页面的时候，会直接给你弹出jsp的源代码或者是下载，所以这个叫做解析包-->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
         </dependency>
-
 <!--        也可以引入下面这些包，下面这些包是可选的：（因为运行时候，servlet,jsp啊，这些tomcat中都有，所以你可以加也可以不加）-->
 <!--        servlet依赖的jar包-->
         <dependency>
@@ -82,15 +81,39 @@
             </plugin>
         </plugins>
 
+<!--        <resources>-->
+<!--            &lt;!&ndash; 打包时将jsp文件拷贝到META-INF目录下 &ndash;&gt;-->
+<!--            <resource>-->
+<!--                &lt;!&ndash; 源文件位置 &ndash;&gt;-->
+<!--                <directory>src/main/webapp</directory>-->
+<!--                &lt;!&ndash;编译到META-INF/resources目录下 &ndash;&gt;-->
+<!--                <targetPath>META-INF/resources</targetPath>-->
+<!--                <includes>-->
+<!--&lt;!&ndash;                    要把哪些文件编译过去，**表示多层目录，*.*表示所有文件&ndash;&gt;-->
+<!--                    <include>**/*.*</include>-->
+<!--                </includes>-->
+<!--            </resource>-->
+<!--        </resources>-->
         <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </resource>
             <!-- 打包时将jsp文件拷贝到META-INF目录下 -->
             <resource>
-                <!-- 源文件位置 -->
+                <!-- 指定resources插件处理哪个目录下的资源文件 -->
                 <directory>src/main/webapp</directory>
-                <!--编译到META-INF/resources目录下 -->
+                <!--注意此次必须要放在此目录下才能被访问到 -->
                 <targetPath>META-INF/resources</targetPath>
                 <includes>
-<!--                    要把哪些文件编译过去，**表示多层目录，*.*表示所有文件-->
                     <include>**/*.*</include>
                 </includes>
             </resource>
