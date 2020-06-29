@@ -63,3 +63,14 @@
 ![](images/14.jpg)
 
 ***默认是读application.properties，当application.properties和application.yml都存在的时候也是默认读application.properties文件中的配置。所以要想读yml文件，需要将application.properties文件删除或者改名***
+
+
+# v2.0
+## 多环境配置文件（主要用于 你有多套环境的时候）：
+![](images/15.jpg)
+
+## Spring Boot 自定义配置：
+![](images/16.jpg)
+![](images/17.jpg)
+![](images/18.jpg)
+***这个方式，使用于配置项比较多的时候***
