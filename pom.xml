@@ -44,15 +44,36 @@
                 </exclusion>
             </exclusions>
         </dependency>
-<!--为了不让@ConfigurationProperties注解出现红线-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
+<!--        引入Srping Boot内嵌的Tomcat对JSP的解析包：这个包如果你不添加的话，你在访问jsp页面的时候，会直接给你弹出jsp的源代码或者是下载，所以这个叫做解析包-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+<!--        也可以引入下面这些包，下面这些包是可选的：（因为运行时候，servlet,jsp啊，这些tomcat中都有，所以你可以加也可以不加）-->
+<!--        servlet依赖的jar包-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+        </dependency>
+        <!--        jsp依赖的jar包-->
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>javax.servlet.jsp-api</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+
+        <!--        jstl标签依赖的jar包-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
     </dependencies>
-
-
     <build>
         <plugins>
             <plugin>
@@ -60,6 +81,20 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+
+        <resources>
+            <!-- 打包时将jsp文件拷贝到META-INF目录下 -->
+            <resource>
+                <!-- 源文件位置 -->
+                <directory>src/main/webapp</directory>
+                <!--编译到META-INF/resources目录下 -->
+                <targetPath>META-INF/resources</targetPath>
+                <includes>
+<!--                    要把哪些文件编译过去，**表示多层目录，*.*表示所有文件-->
+                    <include>**/*.*</include>
+                </includes>
+            </resource>
+        </resources>
     </build>
 
 </project>
