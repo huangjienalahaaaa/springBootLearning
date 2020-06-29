@@ -81,19 +81,7 @@
             </plugin>
         </plugins>
 
-<!--        <resources>-->
-<!--            &lt;!&ndash; 打包时将jsp文件拷贝到META-INF目录下 &ndash;&gt;-->
-<!--            <resource>-->
-<!--                &lt;!&ndash; 源文件位置 &ndash;&gt;-->
-<!--                <directory>src/main/webapp</directory>-->
-<!--                &lt;!&ndash;编译到META-INF/resources目录下 &ndash;&gt;-->
-<!--                <targetPath>META-INF/resources</targetPath>-->
-<!--                <includes>-->
-<!--&lt;!&ndash;                    要把哪些文件编译过去，**表示多层目录，*.*表示所有文件&ndash;&gt;-->
-<!--                    <include>**/*.*</include>-->
-<!--                </includes>-->
-<!--            </resource>-->
-<!--        </resources>-->
+
         <resources>
             <resource>
                 <directory>src/main/java</directory>
@@ -107,13 +95,14 @@
                     <include>**/*.*</include>
                 </includes>
             </resource>
-            <!-- 打包时将jsp文件拷贝到META-INF目录下 -->
+            <!--  打包时将jsp文件拷贝到META-INF目录下 -->
             <resource>
-                <!-- 指定resources插件处理哪个目录下的资源文件 -->
+                <!-- 源文件位置 -->
                 <directory>src/main/webapp</directory>
-                <!--注意此次必须要放在此目录下才能被访问到 -->
+                <!--编译到META-INF/resources目录下 -->
                 <targetPath>META-INF/resources</targetPath>
                 <includes>
+<!--                    要把哪些文件编译过去，**表示多层目录，*.*表示所有文件-->
                     <include>**/*.*</include>
                 </includes>
             </resource>

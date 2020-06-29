@@ -82,10 +82,9 @@
 1. 在pom.xml文件中配置依赖项：
 
 ```java
-<!--        引入Srping Boot内嵌的Tomcat对JSP的解析包-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+<dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
         </dependency>
 ```
 
@@ -121,8 +120,20 @@ spring.mvc.view.suffix=.jsp
 3. 在src/main下创建一个webapp目录，然后在该目录下新建jsp页面
 4. 要在pom.xml中的build种，要配置备注中的配置信息：
 ```java
-<resources>
-            <!-- 打包时将jsp文件拷贝到META-INF目录下 -->
+ <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </resource>
+            <!--  打包时将jsp文件拷贝到META-INF目录下 -->
             <resource>
                 <!-- 源文件位置 -->
                 <directory>src/main/webapp</directory>
