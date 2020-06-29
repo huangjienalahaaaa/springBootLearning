@@ -15,10 +15,6 @@ public class HelloController {
     @Autowired
     private ConfigInfo configInfo;
 
-
-
-
-
     @RequestMapping("/boot/hello")
     public @ResponseBody String hello(){
         return "hello,spring boot";

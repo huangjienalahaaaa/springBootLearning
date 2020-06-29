@@ -148,3 +148,26 @@ spring.mvc.view.suffix=.jsp
 ```
 
 5. 新建jspConrtoller写代码测试一下。
+
+# v4.0springBoot整合mybatis:
+
+***步骤：***
+
+1. 在pom.xml中配置相关jar依赖：
+![](images/19.jpg)
+
+
+2. 在springboot的核心配置文件application.properties中配置数据源：
+![](images/20.jpg)
+
+3. 在MyBatis的Mapper接口中添加@Mapper注解；
+或者在运动的主类上添加 @MapperScan("com.bjpowernode.springboot.mapper")注解包扫描
+
+4.在pom.xml中配置[myBatis代码自动生成]插件：
+![](images/21.jpg)
+
+等maven下载号之后，双击对应的插件：
+![](images/22.jpg)
+
+
+没写完，写不下去了，看视频
