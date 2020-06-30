@@ -208,3 +208,12 @@ Restfull原则：
 > spring boot热部署通过添加一个插件实现：<font color="red">spring-boot-devtools</font>
 ![](images/35.jpg)
 
+# v9.0 Spring Boot非web应用程序方式（也就是开发纯java程序）:
+![](images/36.jpg)
+![](images/37.jpg)
+![](images/38.jpg)
+![](images/39.jpg)
+
+***关闭logo，日志输出：***
+![](images/40.jpg)
+
