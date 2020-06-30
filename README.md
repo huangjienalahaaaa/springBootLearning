@@ -199,3 +199,12 @@ Restfull原则：
 3. 分页，排序等操作，不需要采用斜杆传参数：比如说订单列表接口： /boot/orders?p=1&sort=desc
     所以：当传的参数不是数据库里的字段的时候，可以不用斜杆，可以用？的形式。
 ```
+
+# v6.0 Spring Boot集成redis:
+# v7.0 Spring Boot集成Dubbo:
+# v8.0 Spring Boot热部署插件:
+> 在实际开发中，我们修改某些代码逻辑功能或页面都需要重启应用，这无形中降低了开发效率；
+> 热部署是指我们修改代码后，服务能自动重启加载新修改的内容，这样大大提高了我们的改法效率；
+> spring boot热部署通过添加一个插件实现：<font color="red">spring-boot-devtools</font>
+![](images/35.jpg)
+
