@@ -217,3 +217,7 @@ Restfull原则：
 ***关闭logo，日志输出：***
 ![](images/40.jpg)
 
+
+# v10.0springBoot使用拦截器:
+![](images/41.jpg)
+
