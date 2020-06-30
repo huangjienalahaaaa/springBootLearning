@@ -191,3 +191,11 @@ spring.mvc.view.suffix=.jsp
 ![](images/32.jpg)
 ![](images/33.jpg)
 ![](images/34.jpg)
+
+```java
+Restfull原则：
+1. 增post请求，删delete请求，改put请求，查get请求
+2. 请求路径不要出现动词，查询订单：/boot/order/1/1021(正确), /boot/queryOrder/1/1021 (query是动词，不建议使用)
+3. 分页，排序等操作，不需要采用斜杆传参数：比如说订单列表接口： /boot/orders?p=1&sort=desc
+    所以：当传的参数不是数据库里的字段的时候，可以不用斜杆，可以用？的形式。
+```
