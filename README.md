@@ -184,3 +184,10 @@ spring.mvc.view.suffix=.jsp
 ![](images/28.jpg)
 ![](images/29.jpg)
 ![](images/30.jpg)
+
+
+# v6.0 Spring Boot下的Restfull:
+![](images/31.jpg)
+![](images/32.jpg)
+![](images/33.jpg)
+![](images/34.jpg)
