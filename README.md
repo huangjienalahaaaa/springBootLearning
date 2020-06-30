@@ -171,3 +171,16 @@ spring.mvc.view.suffix=.jsp
 
 
 没写完，写不下去了，看视频
+
+
+
+# v5.0 Spring Boot下的Spring MVC:
+
+![](images/23.jpg)
+![](images/24.jpg)
+![](images/25.jpg)
+![](images/26.jpg)
+![](images/27.jpg)
+![](images/28.jpg)
+![](images/29.jpg)
+![](images/30.jpg)
