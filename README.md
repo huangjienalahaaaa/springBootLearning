@@ -227,5 +227,9 @@ Restfull原则：
 ![](images/43.jpg)
 ![](images/44.jpg)
 
+# v12.0springBoot中使用Filter(过滤器):
+***Filter过滤器和servlet在springboot中用的都不是很多，主要还是用拦截器。且过滤器的用法和servlet是一模一样的***
+![](images/45.jpg)
+![](images/46.jpg)
 
 
