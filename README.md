@@ -251,6 +251,7 @@ Restfull原则：
 ![](images/52.jpg)
 
 # v14.0 SpringBoot 程序打war包部署：
+![](images/56.jpg)
 
  ```java
 Tomcat有2种存在形式（jar包和.zip）：
@@ -265,6 +266,41 @@ Tomcat有2种存在形式（jar包和.zip）：
 ![](images/54.jpg)
 因为是打印成war包，所以是个web程序：
 ![](images/55.jpg)
+
+
+> 打包如果是使用maven package的方式的话，会打包在本地的target下面；如果用的是maven install打包的话，会在本地maven仓库装一个包：
+>![](images/57.jpg)
+
+注意：pom.xml文件中要加入以下resource:
+```java
+ <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource> 
+            <resource>
+                <directory>src/main/resource</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </resource>
+```
+
+2. 将打包完war包复制放在tomcat的webapp下:
+![](images/58.jpg)
+然后运行tomcat:
+![](images/59.jpg)
+
+3.运行之后，会发现Tomcat会自动把你war包给解压：
+![](images/60.jpg)
+
+***此时项目的根目录就是：***
+![](images/61.jpg)
+
+所以要访问页面的话，就得再浏览器中输入：
+http://127.0.0.1:9090/demo-0.0.1-SNAPSHOT/boot/jsp
+
 
 
 

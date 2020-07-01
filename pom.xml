@@ -17,6 +17,10 @@
     <version>0.0.1-SNAPSHOT</version>
 
 
+<!--    2. 将打包方式改成war-->
+    <packaging>war</packaging>
+
+
     <name>demo</name>
     <description>Demo project for Spring Boot</description>
 
@@ -48,12 +52,25 @@
     </dependencies>
     <build>
         <plugins>
+            <!--            springboot打包的插件-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
         <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/main/resource</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </resource>
             <resource>
                 <directory>src/main/webapp</directory>
                 <!--注意此次必须要放在此目录下才能被访问到 -->
@@ -64,5 +81,4 @@
             </resource>
         </resources>
     </build>
-
 </project>
