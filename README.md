@@ -221,3 +221,6 @@ Restfull原则：
 # v10.0springBoot使用拦截器:
 ![](images/41.jpg)
 
+# v11.0springBoot中使用servlet:
+![](images/42.jpg)
+
