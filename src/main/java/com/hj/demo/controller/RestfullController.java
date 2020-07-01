@@ -15,8 +15,8 @@ public class RestfullController {
 
     //   返回jsp
     @GetMapping("/boot/jsp")
-    public @ResponseBody String jsp(Model model){
-        model.addAttribute("data","springBoot War");
+    public String jsp(Model model){
+        model.addAttribute("data","hello jsp");
         return "abc";
     }
 }
