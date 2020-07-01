@@ -1,6 +1,8 @@
 package com.hj.demo.config;
 
+import com.hj.demo.filter.MyFilter;
 import com.hj.demo.servlet.HeServlet;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,17 +23,17 @@ public class WebMVCConfig implements WebMvcConfigurer {
         registry.addInterceptor(new LoginInterceptor()).addPathPatterns(addPathPatterns).excludePathPatterns(excludePathPatterns);
     }
 
-/** 配置一个servlet
- * @Bean 第一次是再spring session中遇见，相当于在xml中写入：
- *      <bean id="" class="">
- *           ....
- *      </bean>
- *
- *  bean的id就是方法名heServletRegistrationBean，bean的class就是返回值ServletRegistrationBean
- */
+//    配置一个servlet（原来是在web.xml中配置，但是springbooot中没有web.xml文件，所以是在这里配置）
     @Bean
     public ServletRegistrationBean heServletRegistrationBean(){
         ServletRegistrationBean registration = new ServletRegistrationBean(new HeServlet(),"/servlet/heServlet");
+        return registration;
+    }
+    //    配置一个Filter（原来是在web.xml中配置，但是springbooot中没有web.xml文件，所以是在这里配置）
+    @Bean
+    public FilterRegistrationBean myFilterRegistration(){
+        FilterRegistrationBean registration = new FilterRegistrationBean(new MyFilter());
+        registration.addUrlPatterns("/*");
         return registration;
     }
 }
