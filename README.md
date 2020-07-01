@@ -246,6 +246,25 @@ Restfull原则：
 ![](images/51.jpg)
 
 
+
 ***第二种方式：***
 ![](images/52.jpg)
+
+# v14.0 SpringBoot 程序打war包部署：
+
+ ```java
+Tomcat有2种存在形式（jar包和.zip）：
+    1. 发布成.zip的压缩包，解压之后可以使用。
+    2. 发布成jar包，然后你可以在你的项目代码中加入这个jar包，然后调用这个jar包启动tomcat。springboot采用的是这个方式
+```
+
+步骤：
+
+1. 新建一个项目：
+![](images/53.jpg)
+![](images/54.jpg)
+因为是打印成war包，所以是个web程序：
+![](images/55.jpg)
+
+
 

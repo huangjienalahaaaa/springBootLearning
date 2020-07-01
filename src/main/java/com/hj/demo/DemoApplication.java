@@ -2,10 +2,8 @@ package com.hj.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.servlet.ServletComponentScan;
 
 @SpringBootApplication
-@ServletComponentScan(basePackages = {"com.hj.demo.servlet","package com.hj.demo.filter"}) //filter也是使用这个注解
 public class DemoApplication {
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
