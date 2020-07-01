@@ -235,3 +235,17 @@ Restfull原则：
 ![](images/48.jpg)
 
 
+# v13.0 springBoot配置字符编码：
+![](images/49.jpg)
+
+***第一种方式：***
+
+
+* 第一种方式，原来是在web.xml文件中进行配置的。但是springBoot没有这个文件，所以也是跟上面一样的方式去配置。
+![](images/50.jpg)
+![](images/51.jpg)
+
+
+***第二种方式：***
+![](images/52.jpg)
+

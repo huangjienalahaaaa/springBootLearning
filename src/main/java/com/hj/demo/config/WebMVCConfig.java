@@ -23,13 +23,11 @@ public class WebMVCConfig implements WebMvcConfigurer {
         registry.addInterceptor(new LoginInterceptor()).addPathPatterns(addPathPatterns).excludePathPatterns(excludePathPatterns);
     }
 
-//    配置一个servlet（原来是在web.xml中配置，但是springbooot中没有web.xml文件，所以是在这里配置）
     @Bean
     public ServletRegistrationBean heServletRegistrationBean(){
         ServletRegistrationBean registration = new ServletRegistrationBean(new HeServlet(),"/servlet/heServlet");
         return registration;
     }
-    //    配置一个Filter（原来是在web.xml中配置，但是springbooot中没有web.xml文件，所以是在这里配置）
     @Bean
     public FilterRegistrationBean myFilterRegistration(){
         FilterRegistrationBean registration = new FilterRegistrationBean(new MyFilter());
