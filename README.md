@@ -334,3 +334,19 @@ http://127.0.0.1:9090/demo-0.0.1-SNAPSHOT/boot/jsp
 
 # v16.0 springBoot项目运行与部署方式总结：
 ![](images/68.jpg)
+
+# v17.0 springBoot集成Spring Session:
+
+# v18.0 springBoot健康检查Actuator:
+
+![](images/69.jpg)
+
+> Actuator与我们实际开发角度关系不大，有点偏向运维的角度。
+> 对我们开发来说，可以作为了解
+
+![](images/70.jpg)
+![](images/71.jpg)
+![](images/72.jpg)
+![](images/73.jpg)
+![](images/74.jpg)
+
