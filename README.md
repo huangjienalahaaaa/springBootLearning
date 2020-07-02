@@ -303,4 +303,17 @@ http://127.0.0.1:9090/demo-0.0.1-SNAPSHOT/boot/jsp
 
 
 
+# v15.0 SpringBoot 程序打jar包与运行：
+![](images/62.jpg)
 
+
+***为了能访问到jsp，将插件的版本改成1.4.2：***
+![](images/64.jpg)
+
+
+
+***运行：***
+* 打完jar包之后，这个jar包可以放在任何的地方。
+* 然后再地址栏输入"cmd"，打开终端
+* 然后再终端中输入"java -jar jar包名"
+![](images/63.jpg)
