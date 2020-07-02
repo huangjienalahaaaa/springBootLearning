@@ -360,5 +360,7 @@ http://127.0.0.1:9090/demo-0.0.1-SNAPSHOT/boot/jsp
 ![](images/79.jpg)
 ![](images/80.jpg)
 ![](images/81.jpg)
+此时，就可以看到这个应用程序就退出了（也就是远程关闭服务）：
+![](images/82.jpg)
 
 
