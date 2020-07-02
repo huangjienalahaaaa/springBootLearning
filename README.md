@@ -364,3 +364,10 @@ http://127.0.0.1:9090/demo-0.0.1-SNAPSHOT/boot/jsp
 ![](images/82.jpg)
 
 
+
+# v19.0 springBoot继承Thymeleaf模板:
+![](images/83.jpg)
+![](images/84.jpg)
+
+
+
