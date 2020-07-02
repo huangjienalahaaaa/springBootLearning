@@ -317,3 +317,16 @@ http://127.0.0.1:9090/demo-0.0.1-SNAPSHOT/boot/jsp
 * 然后再地址栏输入"cmd"，打开终端
 * 然后再终端中输入"java -jar jar包名"
 ![](images/63.jpg)
+
+
+***在mvn package的时候可能会报错 ：***
+
+1. 配置信息没有读到： 
+![](images/65.jpg)
+
+* 是因为src/main/resources下的配置文件没有编译到 target/classes下去（因为这个版本比较老，没有编译过去）：
+![](images/66.jpg)
+
+* 解决方案：
+> 添加resources添加配置信息，表示：resources下的所有资源都编译到classes中：
+![](images/67.jpg)
