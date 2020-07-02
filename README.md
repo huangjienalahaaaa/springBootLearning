@@ -350,3 +350,15 @@ http://127.0.0.1:9090/demo-0.0.1-SNAPSHOT/boot/jsp
 ![](images/73.jpg)
 ![](images/74.jpg)
 
+***/shutdown，配置文件写好之后，如何去访问：***
+![](images/75.jpg)
+
+> JMX：是java的一个管理扩展，是通过jdk的一个工具去访问：
+![](images/76.jpg)
+![](images/77.jpg)
+![](images/78.jpg)
+![](images/79.jpg)
+![](images/80.jpg)
+![](images/81.jpg)
+
+
