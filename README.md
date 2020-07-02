@@ -330,3 +330,7 @@ http://127.0.0.1:9090/demo-0.0.1-SNAPSHOT/boot/jsp
 * 解决方案：
 > 添加resources添加配置信息，表示：resources下的所有资源都编译到classes中：
 ![](images/67.jpg)
+
+
+# v16.0 springBoot项目运行与部署方式总结：
+![](images/68.jpg)
